@@ -2,7 +2,7 @@ let start = 10;
 let end = 100;
 let exclude = 40;
 
-for(let i=start; i<end+start ;i=i+10){
+for(let i=start; i<end+start ;i=i+start){
     if(i===exclude){
         continue
     }
