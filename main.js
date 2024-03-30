@@ -1,28 +1,42 @@
+// let start = 10;
+// let end = 100;
+// let exclude = 40;
+
+// for(let i=start; i<end+start ;i=i+start){
+//     if(i===exclude){
+//         continue
+//     }
+//     console.log (i)
+// }
+
+
+
+
+
 let start = 10;
-let end = 100;
-let exclude = 40;
+let end = 0;
+let stop1 = 3;
 
-for(let i=start; i<end+start ;i=i+start){
-    if(i===exclude){
-        continue
+for(let i=start; i>end ; i--){
+    if(i===stop1-true  ) 
+        break
+    
+            if(i<start){
+        console.log("0"+i)
+    }else{
+        console.log(i)
     }
-    console.log (i)
 }
-
-
-
-
-
-
 
 
 // Output
 10
-20
-30
-50
-60
-70
-80
-90
-100
+09
+08
+07
+06
+05
+04
+03
+
+
