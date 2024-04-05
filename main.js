@@ -40,13 +40,6 @@
 // // 04
 // // 03
 
-
-
-
-
-
-
-
 // let start3 = 1;
 // let end3 = 6;
 // let breaker = 2;
@@ -77,27 +70,49 @@
 // -- 2
 // -- 4
 
-let index = 10;
-let jump = 2;
-let i=index
-
-for(; i>jump; ){
- // Write Your Code Here
-    console.log(i);
-    i=i-jump;
-    if(i===jump){
-     break;
-    }
-  
-}
+// let index = 10;
+// let jump = 2;
 
 
+// for(; ; ){
+//  // Write Your Code Here
+//     console.log(index);
+//     index=index-jump;
+//     if(index===jump){
+//      break;
+//     }
 
-
-
+// }
 
 // Output
-10
-8
-6
-4
+// 10
+// 8
+// 6
+// 4
+
+let friends = ["Ahmed", "Sayed", "Eman", "Mahmoud", "Ameer", "Osama"];
+let letter = "a";
+let newFriends = [];
+
+
+
+for( let i=friends.indexOf("Ahmed") ;i< friends.length;i++){
+
+    if( !friends[i].toLowerCase().startsWith(letter)) {
+       newFriends.push(friends[i])
+    }
+   
+}
+console.log(newFriends)
+
+for( i=friends.indexOf("Ahmed");i<newFriends.length;i++){
+
+    console.log(`${i+true}`+ "=>" + newFriends[i])
+}
+
+// Output
+// "1 => Sayed"
+// "2 => Eman"
+// "3 => Mahmoud"
+// "4 => Osama"
+// "5 => Sameh"
