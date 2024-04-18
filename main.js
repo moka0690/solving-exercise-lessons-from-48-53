@@ -135,4 +135,15 @@ console.log(newSwappedName)
 
 
 
+let start1 = 0;
+let mix = [1, 2, 3, "A", "B", "C", 4];
 
+// Output
+2
+3
+4
+for (let i = start1; i < mix.length; i++) {
+    if (typeof mix[i] === 'number' && mix[i] !== 1) {
+        console.log(mix[i]);
+    }
+}
